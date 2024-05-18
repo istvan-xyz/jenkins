@@ -15,7 +15,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin --assume-yes
 
 # Additional depedencies
-RUN apt install ncftp
+RUN apt install -fuy ncftp
 
 # Cleanup
 RUN apt-get -qq -y autoremove && \
